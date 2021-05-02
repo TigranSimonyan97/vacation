@@ -17,12 +17,12 @@ protocol Routing {
     var acceptableStatusCodes: Set<Int> { get }
     var cachingType: CachePolicy { get }
     
-    var url: URL { get }
+    var baseURL: URL { get }
     var request: URLRequest { get }
 }
 
 extension Routing {
-    var url: URL { return URL(string: "firebase url")! }
+    var baseURL: URL { return URL(string: "firebase url")! }
     var params: [String: Any] { return [:] }
     var headers: [String: String] { return [:] }
     var method: HTTPMethod { return .get }
@@ -31,7 +31,8 @@ extension Routing {
     var cachingType: CachePolicy { return .session }
     
     var request: URLRequest {
-        var request = URLRequest(url: url)
+        
+        var request = URLRequest(url: baseURL)
         
         for header in headers {
             request.setValue(header.key, forHTTPHeaderField: header.value)

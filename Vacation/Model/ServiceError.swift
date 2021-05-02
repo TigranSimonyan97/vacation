@@ -10,4 +10,5 @@ import Foundation
 enum ServiceError: Error {
     case missingData(serviceKey: String)
     case custom(message: String, serviceKey: String?)
+    case missingJSON(serviceKey: String)
 }

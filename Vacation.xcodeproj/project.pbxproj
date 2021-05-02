@@ -28,6 +28,13 @@
 		B37D36CE263ECC79006D9E34 /* DecodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36CD263ECC79006D9E34 /* DecodableParser.swift */; };
 		B37D36D3263ED004006D9E34 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36D2263ED004006D9E34 /* ServiceError.swift */; };
 		B37D36D9263ED134006D9E34 /* Entity+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36D8263ED134006D9E34 /* Entity+Decodable.swift */; };
+		B37D36DE263F0C85006D9E34 /* URLSessionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36DD263F0C85006D9E34 /* URLSessionFetcher.swift */; };
+		B37D36E3263F1309006D9E34 /* JSONFileFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36E2263F1309006D9E34 /* JSONFileFetcher.swift */; };
+		B37D36EE263F158D006D9E34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36ED263F158D006D9E34 /* Constants.swift */; };
+		B37D36F6263F1C0E006D9E34 /* ValidatorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36F5263F1C0E006D9E34 /* ValidatorProviding.swift */; };
+		B37D36FC263F1C76006D9E34 /* DecodableParserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36FB263F1C76006D9E34 /* DecodableParserAssembly.swift */; };
+		B37D3701263F1D82006D9E34 /* URLSessionFetcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D3700263F1D82006D9E34 /* URLSessionFetcherAssembly.swift */; };
+		B37D3706263F1DB4006D9E34 /* JSONFileFetcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D3705263F1DB4006D9E34 /* JSONFileFetcherAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,13 @@
 		B37D36CD263ECC79006D9E34 /* DecodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableParser.swift; sourceTree = "<group>"; };
 		B37D36D2263ED004006D9E34 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		B37D36D8263ED134006D9E34 /* Entity+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Decodable.swift"; sourceTree = "<group>"; };
+		B37D36DD263F0C85006D9E34 /* URLSessionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFetcher.swift; sourceTree = "<group>"; };
+		B37D36E2263F1309006D9E34 /* JSONFileFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileFetcher.swift; sourceTree = "<group>"; };
+		B37D36ED263F158D006D9E34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B37D36F5263F1C0E006D9E34 /* ValidatorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProviding.swift; sourceTree = "<group>"; };
+		B37D36FB263F1C76006D9E34 /* DecodableParserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableParserAssembly.swift; sourceTree = "<group>"; };
+		B37D3700263F1D82006D9E34 /* URLSessionFetcherAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFetcherAssembly.swift; sourceTree = "<group>"; };
+		B37D3705263F1DB4006D9E34 /* JSONFileFetcherAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileFetcherAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				B37D3692263EAF68006D9E34 /* Model */,
-				B37D3656263EAC0E006D9E34 /* VacationApp.swift */,
+				B37D36E8263F1560006D9E34 /* SupportingFile */,
 				B37D3658263EAC0E006D9E34 /* ContentView.swift */,
-				B37D365A263EAC0F006D9E34 /* Assets.xcassets */,
-				B37D365F263EAC0F006D9E34 /* Persistence.swift */,
-				B37D3664263EAC0F006D9E34 /* Info.plist */,
-				B37D3661263EAC0F006D9E34 /* Vacation.xcdatamodeld */,
 				B37D365C263EAC0F006D9E34 /* Preview Content */,
 			);
 			path = Vacation;
@@ -166,6 +176,7 @@
 		B37D3692263EAF68006D9E34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B37D36FA263F1C50006D9E34 /* Assemblies */,
 				B37D36D7263ED11B006D9E34 /* Extensions */,
 				B37D3693263EAF72006D9E34 /* DataFetching */,
 				B37D36B2263EB96D006D9E34 /* Parsing */,
@@ -181,6 +192,8 @@
 				B37D36A2263EB4CE006D9E34 /* Encoding */,
 				B37D3694263EAF99006D9E34 /* Routing.swift */,
 				B37D36BE263ECB45006D9E34 /* DataFetching.swift */,
+				B37D36DD263F0C85006D9E34 /* URLSessionFetcher.swift */,
+				B37D36E2263F1309006D9E34 /* JSONFileFetcher.swift */,
 			);
 			path = DataFetching;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 			children = (
 				B37D36C3263ECB7E006D9E34 /* Validatable.swift */,
 				B37D36C8263ECBAB006D9E34 /* DefaultValidator.swift */,
+				B37D36F5263F1C0E006D9E34 /* ValidatorProviding.swift */,
 			);
 			path = Validating;
 			sourceTree = "<group>";
@@ -220,6 +234,37 @@
 				B37D36D8263ED134006D9E34 /* Entity+Decodable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B37D36E8263F1560006D9E34 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36EC263F1585006D9E34 /* Configs */,
+				B37D3656263EAC0E006D9E34 /* VacationApp.swift */,
+				B37D365A263EAC0F006D9E34 /* Assets.xcassets */,
+				B37D365F263EAC0F006D9E34 /* Persistence.swift */,
+				B37D3664263EAC0F006D9E34 /* Info.plist */,
+				B37D3661263EAC0F006D9E34 /* Vacation.xcdatamodeld */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		B37D36EC263F1585006D9E34 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36ED263F158D006D9E34 /* Constants.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		B37D36FA263F1C50006D9E34 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36FB263F1C76006D9E34 /* DecodableParserAssembly.swift */,
+				B37D3700263F1D82006D9E34 /* URLSessionFetcherAssembly.swift */,
+				B37D3705263F1DB4006D9E34 /* JSONFileFetcherAssembly.swift */,
+			);
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B37D36D3263ED004006D9E34 /* ServiceError.swift in Sources */,
+				B37D36EE263F158D006D9E34 /* Constants.swift in Sources */,
 				B37D36C9263ECBAB006D9E34 /* DefaultValidator.swift in Sources */,
 				B37D36BF263ECB45006D9E34 /* DataFetching.swift in Sources */,
 				B37D36CE263ECC79006D9E34 /* DecodableParser.swift in Sources */,
@@ -366,12 +412,18 @@
 				B37D3659263EAC0E006D9E34 /* ContentView.swift in Sources */,
 				B37D36A9263EB4F4006D9E34 /* JSONEncoder.swift in Sources */,
 				B37D36A4263EB4DD006D9E34 /* DataFetchingEncoding.swift in Sources */,
+				B37D3701263F1D82006D9E34 /* URLSessionFetcherAssembly.swift in Sources */,
 				B37D3695263EAF99006D9E34 /* Routing.swift in Sources */,
+				B37D3706263F1DB4006D9E34 /* JSONFileFetcherAssembly.swift in Sources */,
+				B37D36F6263F1C0E006D9E34 /* ValidatorProviding.swift in Sources */,
 				B37D36B4263EB975006D9E34 /* Parsable.swift in Sources */,
 				B37D3663263EAC0F006D9E34 /* Vacation.xcdatamodeld in Sources */,
 				B37D36D9263ED134006D9E34 /* Entity+Decodable.swift in Sources */,
+				B37D36E3263F1309006D9E34 /* JSONFileFetcher.swift in Sources */,
 				B37D36AE263EB50B006D9E34 /* URLEncoder.swift in Sources */,
 				B37D3657263EAC0E006D9E34 /* VacationApp.swift in Sources */,
+				B37D36FC263F1C76006D9E34 /* DecodableParserAssembly.swift in Sources */,
+				B37D36DE263F0C85006D9E34 /* URLSessionFetcher.swift in Sources */,
 				B37D36BA263ECB24006D9E34 /* DataRetrievable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +585,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Vacation/Preview Content\"";
 				DEVELOPMENT_TEAM = 89WYTPN88J;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Vacation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vacation/SupportingFile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,7 +607,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Vacation/Preview Content\"";
 				DEVELOPMENT_TEAM = 89WYTPN88J;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Vacation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vacation/SupportingFile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

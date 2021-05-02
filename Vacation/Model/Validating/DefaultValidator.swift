@@ -19,13 +19,13 @@ class DefaultValidator: Validatable {
     
     var response: URLResponse?
     
-    required init(response: URLResponse?, data: Data?, service: String) {
+    required init(service: String, response: URLResponse?, data: Data?) {
         self.response = response
         self.data = data
         self.service = service
     }
     
-    required init(entity: Any, service: String) {
+    required init(service: String, entity: Any) {
         self.entity = entity
         self.service = service
     }

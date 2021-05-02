@@ -15,8 +15,8 @@ protocol Validatable {
     var data: Data? { get }
     var entity: Any? { get set }
 
-    init(response: URLResponse?, data: Data?, service: String)
-    init(entity: Any, service: String)
+    init(service: String, response: URLResponse?, data: Data?)
+    init(service: String, entity: Any)
 
     func withoutValidation() -> Future<Parsable, Error>
     func validate<T: Decodable>(_ handler: @escaping ((T, String, Int?) -> Error?)) -> Future<Parsable, Error>
