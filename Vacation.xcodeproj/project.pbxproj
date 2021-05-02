@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,19 @@
 		B37D3663263EAC0F006D9E34 /* Vacation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B37D3661263EAC0F006D9E34 /* Vacation.xcdatamodeld */; };
 		B37D366E263EAC0F006D9E34 /* VacationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D366D263EAC0F006D9E34 /* VacationTests.swift */; };
 		B37D3679263EAC0F006D9E34 /* VacationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D3678263EAC0F006D9E34 /* VacationUITests.swift */; };
+		B37D368E263EAF5D006D9E34 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = B37D368D263EAF5D006D9E34 /* Swinject */; };
+		B37D3695263EAF99006D9E34 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D3694263EAF99006D9E34 /* Routing.swift */; };
+		B37D36A4263EB4DD006D9E34 /* DataFetchingEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36A3263EB4DD006D9E34 /* DataFetchingEncoding.swift */; };
+		B37D36A9263EB4F4006D9E34 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36A8263EB4F4006D9E34 /* JSONEncoder.swift */; };
+		B37D36AE263EB50B006D9E34 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36AD263EB50B006D9E34 /* URLEncoder.swift */; };
+		B37D36B4263EB975006D9E34 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36B3263EB975006D9E34 /* Parsable.swift */; };
+		B37D36BA263ECB24006D9E34 /* DataRetrievable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36B9263ECB24006D9E34 /* DataRetrievable.swift */; };
+		B37D36BF263ECB45006D9E34 /* DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36BE263ECB45006D9E34 /* DataFetching.swift */; };
+		B37D36C4263ECB7E006D9E34 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36C3263ECB7E006D9E34 /* Validatable.swift */; };
+		B37D36C9263ECBAB006D9E34 /* DefaultValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36C8263ECBAB006D9E34 /* DefaultValidator.swift */; };
+		B37D36CE263ECC79006D9E34 /* DecodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36CD263ECC79006D9E34 /* DecodableParser.swift */; };
+		B37D36D3263ED004006D9E34 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36D2263ED004006D9E34 /* ServiceError.swift */; };
+		B37D36D9263ED134006D9E34 /* Entity+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D36D8263ED134006D9E34 /* Entity+Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,18 @@
 		B37D3674263EAC0F006D9E34 /* VacationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37D3678263EAC0F006D9E34 /* VacationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationUITests.swift; sourceTree = "<group>"; };
 		B37D367A263EAC0F006D9E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37D3694263EAF99006D9E34 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		B37D36A3263EB4DD006D9E34 /* DataFetchingEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchingEncoding.swift; sourceTree = "<group>"; };
+		B37D36A8263EB4F4006D9E34 /* JSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
+		B37D36AD263EB50B006D9E34 /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
+		B37D36B3263EB975006D9E34 /* Parsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		B37D36B9263ECB24006D9E34 /* DataRetrievable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRetrievable.swift; sourceTree = "<group>"; };
+		B37D36BE263ECB45006D9E34 /* DataFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetching.swift; sourceTree = "<group>"; };
+		B37D36C3263ECB7E006D9E34 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		B37D36C8263ECBAB006D9E34 /* DefaultValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValidator.swift; sourceTree = "<group>"; };
+		B37D36CD263ECC79006D9E34 /* DecodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableParser.swift; sourceTree = "<group>"; };
+		B37D36D2263ED004006D9E34 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		B37D36D8263ED134006D9E34 /* Entity+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37D368E263EAF5D006D9E34 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +125,7 @@
 		B37D3655263EAC0E006D9E34 /* Vacation */ = {
 			isa = PBXGroup;
 			children = (
+				B37D3692263EAF68006D9E34 /* Model */,
 				B37D3656263EAC0E006D9E34 /* VacationApp.swift */,
 				B37D3658263EAC0E006D9E34 /* ContentView.swift */,
 				B37D365A263EAC0F006D9E34 /* Assets.xcassets */,
@@ -136,6 +163,65 @@
 			path = VacationUITests;
 			sourceTree = "<group>";
 		};
+		B37D3692263EAF68006D9E34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36D7263ED11B006D9E34 /* Extensions */,
+				B37D3693263EAF72006D9E34 /* DataFetching */,
+				B37D36B2263EB96D006D9E34 /* Parsing */,
+				B37D36B8263ECAD6006D9E34 /* Validating */,
+				B37D36D2263ED004006D9E34 /* ServiceError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B37D3693263EAF72006D9E34 /* DataFetching */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36A2263EB4CE006D9E34 /* Encoding */,
+				B37D3694263EAF99006D9E34 /* Routing.swift */,
+				B37D36BE263ECB45006D9E34 /* DataFetching.swift */,
+			);
+			path = DataFetching;
+			sourceTree = "<group>";
+		};
+		B37D36A2263EB4CE006D9E34 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36A3263EB4DD006D9E34 /* DataFetchingEncoding.swift */,
+				B37D36A8263EB4F4006D9E34 /* JSONEncoder.swift */,
+				B37D36AD263EB50B006D9E34 /* URLEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		B37D36B2263EB96D006D9E34 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36B3263EB975006D9E34 /* Parsable.swift */,
+				B37D36B9263ECB24006D9E34 /* DataRetrievable.swift */,
+				B37D36CD263ECC79006D9E34 /* DecodableParser.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		B37D36B8263ECAD6006D9E34 /* Validating */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36C3263ECB7E006D9E34 /* Validatable.swift */,
+				B37D36C8263ECBAB006D9E34 /* DefaultValidator.swift */,
+			);
+			path = Validating;
+			sourceTree = "<group>";
+		};
+		B37D36D7263ED11B006D9E34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B37D36D8263ED134006D9E34 /* Entity+Decodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +238,9 @@
 			dependencies = (
 			);
 			name = Vacation;
+			packageProductDependencies = (
+				B37D368D263EAF5D006D9E34 /* Swinject */,
+			);
 			productName = Vacation;
 			productReference = B37D3653263EAC0E006D9E34 /* Vacation.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +312,9 @@
 				Base,
 			);
 			mainGroup = B37D364A263EAC0E006D9E34;
+			packageReferences = (
+				B37D368C263EAF5D006D9E34 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = B37D3654263EAC0E006D9E34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,10 +357,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37D36D3263ED004006D9E34 /* ServiceError.swift in Sources */,
+				B37D36C9263ECBAB006D9E34 /* DefaultValidator.swift in Sources */,
+				B37D36BF263ECB45006D9E34 /* DataFetching.swift in Sources */,
+				B37D36CE263ECC79006D9E34 /* DecodableParser.swift in Sources */,
+				B37D36C4263ECB7E006D9E34 /* Validatable.swift in Sources */,
 				B37D3660263EAC0F006D9E34 /* Persistence.swift in Sources */,
 				B37D3659263EAC0E006D9E34 /* ContentView.swift in Sources */,
+				B37D36A9263EB4F4006D9E34 /* JSONEncoder.swift in Sources */,
+				B37D36A4263EB4DD006D9E34 /* DataFetchingEncoding.swift in Sources */,
+				B37D3695263EAF99006D9E34 /* Routing.swift in Sources */,
+				B37D36B4263EB975006D9E34 /* Parsable.swift in Sources */,
 				B37D3663263EAC0F006D9E34 /* Vacation.xcdatamodeld in Sources */,
+				B37D36D9263ED134006D9E34 /* Entity+Decodable.swift in Sources */,
+				B37D36AE263EB50B006D9E34 /* URLEncoder.swift in Sources */,
 				B37D3657263EAC0E006D9E34 /* VacationApp.swift in Sources */,
+				B37D36BA263ECB24006D9E34 /* DataRetrievable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B37D368C263EAF5D006D9E34 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B37D368D263EAF5D006D9E34 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B37D368C263EAF5D006D9E34 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B37D3661263EAC0F006D9E34 /* Vacation.xcdatamodeld */ = {
